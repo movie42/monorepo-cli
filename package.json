@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./choose-workspace.js"
+    "start": "node ./choose-workspace.js",
+    "etc": "node ./text-command.js"
   }
 }
