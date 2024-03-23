@@ -47,10 +47,12 @@ const runCommand = (workspace, package, env) => {
 
   childProcess.on("error", (error) => {
     console.error(`Error: ${error}`);
+    process.exit(1);
   });
 
   childProcess.on("close", (code) => {
     console.log(`Process exited with code ${code}`);
+    process.exit();
   });
 };
 
